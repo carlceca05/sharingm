@@ -1,0 +1,104 @@
+.fondo{
+    background-image: url(../imagenes/sharingMIND_principal.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.enlacefooter{
+    text-decoration: none;
+    color: gray;
+}
+.baner{
+    background-color: black;
+    border-radius: 20px;
+    height: 150px;
+    width: 90%;
+}
+/*.alto{
+    height: 60vh;
+}*/
+.testi{
+    position: absolute;
+    top:0;
+    right: 0;
+    padding: 3px;
+}
+
+input[type="radio"] {
+    position: absolute;
+    left: -9999px;
+  }
+
+  .filters * {
+    display: inline-block;
+  }
+
+  .posts .post-categories {
+    margin-bottom: 0.75rem;
+    font-size: 0.75rem;
+  }
+  
+  .posts .post-categories * {
+    display: inline-block;
+  }
+  
+  .posts .post-categories li {
+    margin-bottom: 0.2rem;
+  }
+  
+  .posts .post-categories a {
+    padding: 0.2rem 0.5rem;
+    border-radius: 1rem;
+    border: 1px solid;
+    line-height: normal;
+    transition: all 0.1s;
+  }
+  
+  .posts .post-categories a:hover {
+    background: var(--green);
+    color: var(--white);
+  }
+
+
+  /* FILTERING RULES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  [value="todo"]:checked ~ .filters [for="todo"],
+  [value="Inversionista"]:checked ~ .filters [for="Inversionista"],
+  [value="Entrepreneur"]:checked ~ .filters [for="Entrepreneur"],
+  [value="Espiritú"]:checked ~ .filters [for="Espiritú"],
+  [value="Marketing"]:checked ~ .filters [for="Marketing"],
+  [value="Branding"]:checked ~ .filters [for="Branding"],
+  [value="Otros"]:checked ~ .filters [for="Otros"] {
+    background: var(--green);
+    color: var(--white);
+  }
+  
+  [value="todo"]:checked ~ .posts [data-category] {
+    display: block;
+    }
+  
+[value="Inversionista"]:checked ~ .posts .post:not([data-category~="Inversionista"]),
+[value="Entrepreneur"]:checked ~ .posts .post:not([data-category~="Entrepreneur"]),
+[value="Espiritú"]:checked ~ .posts .post:not([data-category~="Espiritú"]),
+[value="Marketing"]:checked ~ .posts .post:not([data-category~="Marketing"]),
+[value="Branding"]:checked ~ .posts .post:not([data-category~="Branding"]),
+[value="Otros"]:checked ~ .posts .post:not([data-category~="Otros"]) {
+    display: none;
+}
+
+/* MQ
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media screen (min-width:100) and (max-width: 900px) {
+    .alto{
+        height: auto;
+    }
+    
+}
+@media only screen and (min-width:900px) and (max-width:2000px){
+    .dealto {
+        height: auto;
+    }
+}
+
+
+
