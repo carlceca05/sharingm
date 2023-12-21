@@ -1,3 +1,298 @@
+.card:hover {
+  transform: scale(1.08);
+}
+.fondazo {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  transition: all .2s ease-out;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url('../imagenes/s4-1.jpg');
+  /*background-color: blue;*/
+  -webkit-animation: fondoso 25s infinite linear;
+  animation: fondoso 25s infinite linear;
+  -moz-animation: fondoso 25s infinite linear;
+}
+@keyframes fondoso {
+  0% {
+    background-image: url('../imagenes/s4-1.jpg');
+  }
+  25% {
+    background-image: url('../imagenes/s4-2.jpg');
+  }
+  26% {
+    background-image: url('../imagenes/s4-2.jpg');
+  }
+  50% {
+    background-image: url('../imagenes/s4-3.jpg');
+  }
+  51% {
+    background-image: url('../imagenes/s4-3.jpg');
+  }
+  75% {
+    background-image: url('../imagenes/s4-1.jpg');
+  }
+  76% {
+    background-image: url('../imagenes/s4-1.jpg');
+  }
+  100% {
+    background-image: url('../imagenes/s4-2.jpg');
+  }
+}
+
+.fondazo2 {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  transition: all .2s ease-out;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url('../imagenes/capa-1.jpg');
+  /*background-color: blue;*/
+  -webkit-animation: fondoso2 25s infinite linear;
+  animation: fondoso2 25s infinite linear;
+  -moz-animation: fondoso2 25s infinite linear;
+}
+@keyframes fondoso2 {
+  0% {
+    background-image: url('../imagenes/capa-1.jpg');
+  }
+  25% {
+    background-image: url('../imagenes/capa-2.jpg');
+  }
+  26% {
+    background-image: url('../imagenes/capa-2.jpg');
+  }
+  50% {
+    background-image: url('../imagenes/capa-3.jpg');
+  }
+  51% {
+    background-image: url('../imagenes/capa-3.jpg');
+  }
+  75% {
+    background-image: url('../imagenes/capa-1.jpg');
+  }
+  76% {
+    background-image: url('../imagenes/capa-1.jpg');
+  }
+  100% {
+    background-image: url('../imagenes/capa-2.jpg');
+  }
+}
+
+
+.fondazo3 {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  transition: all .2s ease-out;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url('../imagenes/nacional-1.jpg');
+  /*background-color: blue;*/
+  -webkit-animation: fondoso3 25s infinite linear;
+  animation: fondoso3 25s infinite linear;
+  -moz-animation: fondoso3 25s infinite linear;
+}
+@keyframes fondoso3 {
+  0% {
+    background-image: url('../imagenes/nacional-1.jpg');
+  }
+  25% {
+    background-image: url('../imagenes/nacional-2.jpg');
+  }
+  26% {
+    background-image: url('../imagenes/nacional-2.jpg');
+  }
+  50% {
+    background-image: url('../imagenes/nacional-3.jpg');
+  }
+  51% {
+    background-image: url('../imagenes/nacional-3.jpg');
+  }
+  75% {
+    background-image: url('../imagenes/nacional-1.jpg');
+  }
+  76% {
+    background-image: url('../imagenes/nacional-1.jpg');
+  }
+  100% {
+    background-image: url('../imagenes/nacional-2.jpg');
+  }
+}
+
+.fondazo4 {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  transition: all .2s ease-out;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url('../imagenes/s4-1.jpg');
+  /*background-color: blue;*/
+  -webkit-animation: fondoso4 25s infinite linear;
+  animation: fondoso4 25s infinite linear;
+  -moz-animation: fondoso4 25s infinite linear;
+}
+@keyframes fondoso4 {
+  0% {
+    background-image: url('../imagenes/s4-1.jpg');
+  }
+  25% {
+    background-image: url('../imagenes/s4-2.jpg');
+  }
+  26% {
+    background-image: url('../imagenes/s4-2.jpg');
+  }
+  50% {
+    background-image: url('../imagenes/s4-3.jpg');
+  }
+  51% {
+    background-image: url('../imagenes/s4-3.jpg');
+  }
+  75% {
+    background-image: url('../imagenes/s4-1.jpg');
+  }
+  76% {
+    background-image: url('../imagenes/s4-1.jpg');
+  }
+  100% {
+    background-image: url('../imagenes/s4-2.jpg');
+  }
+}
+
+.fondazo5 {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  transition: all .2s ease-out;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url('../imagenes/autos-1.JPG');
+  /*background-color: blue;*/
+  -webkit-animation: fondoso5 25s infinite linear;
+  animation: fondoso5 25s infinite linear;
+  -moz-animation: fondoso5 25s infinite linear;
+}
+@keyframes fondoso5 {
+  0% {
+    background-image: url('../imagenes/autos-1.JPG');
+  }
+  25% {
+    background-image: url('../imagenes/autos-2.JPG');
+  }
+  26% {
+    background-image: url('../imagenes/autos-2.JPG');
+  }
+  50% {
+    background-image: url('../imagenes/autos-3.JPG');
+  }
+  51% {
+    background-image: url('../imagenes/autos-3.JPG');
+  }
+  75% {
+    background-image: url('../imagenes/autos-1.JPG');
+  }
+  76% {
+    background-image: url('../imagenes/autos-1.JPG');
+  }
+  100% {
+    background-image: url('../imagenes/autos-2.JPG');
+  }
+}
+
+.fondazo6 {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  transition: all .2s ease-out;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url('../imagenes/formas-1.JPG');
+  /*background-color: blue;*/
+  -webkit-animation: fondoso6 25s infinite linear;
+  animation: fondoso6 25s infinite linear;
+  -moz-animation: fondoso6 25s infinite linear;
+}
+@keyframes fondoso6 {
+  0% {
+    background-image: url('../imagenes/formas-1.JPG');
+  }
+  25% {
+    background-image: url('../imagenes/formas-2.JPG');
+  }
+  26% {
+    background-image: url('../imagenes/formas-2.JPG');
+  }
+  50% {
+    background-image: url('../imagenes/formas-3.JPG');
+  }
+  51% {
+    background-image: url('../imagenes/formas-3.JPG');
+  }
+  75% {
+    background-image: url('../imagenes/formas-1.JPG');
+  }
+  76% {
+    background-image: url('../imagenes/formas-1.JPG');
+  }
+  100% {
+    background-image: url('../imagenes/formas-2.JPG');
+  }
+}
+
+
+
+
+
+
+
+
+
+.fondazo7 {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  transition: all .2s ease-out;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url('../imagenes/joyas-1.JPG');
+  /*background-color: blue;*/
+  -webkit-animation: fondoso7 25s infinite linear;
+  animation: fondoso7 25s infinite linear;
+  -moz-animation: fondoso7 25s infinite linear;
+}
+@keyframes fondoso7 {
+  0% {
+    background-image: url('../imagenes/joyas-1.JPG');
+  }
+  25% {
+    background-image: url('../imagenes/joyas-2.JPG');
+  }
+  26% {
+    background-image: url('../imagenes/joyas-2.JPG');
+  }
+  50% {
+    background-image: url('../imagenes/joyas-3.JPG');
+  }
+  51% {
+    background-image: url('../imagenes/joyas-3.JPG');
+  }
+  75% {
+    background-image: url('../imagenes/joyas-1.JPG');
+  }
+  76% {
+    background-image: url('../imagenes/joyas-1.JPG');
+  }
+  100% {
+    background-image: url('../imagenes/joyas-2.JPG');
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:100px) and (max-width:900px){
+
+}
+
+
+
 .fondo{
     background-image: url(../imagenes/sharingMIND_principal.png);
     background-repeat: no-repeat;
@@ -100,5 +395,51 @@ input[type="radio"] {
     }
 }
 
+/* ESTILOS SLIDER  TODO: */
 
+#carousel .carousel-item.boat{
+  background-image:url("../img/img4.webp");
+}
+#carousel .carousel-item.sea{
+  background-image:url("../img/img3.webp");
+}
+#carousel .carousel-item.river{
+  background-image:url("../img/inicio2.webp");
+}
+#carousel .carousel-item{
+  height:70vh;
+  width:100%;
+  min-height:350px;
+  background:no-repeat center center scroll;
+  background-size:cover;
+}
+#carousel .carousel-inner .carousel-item{
+  transition:-webkit-transform 2s ease;
+  transition:transform 2s ease;
+  transition:transform 2s ease, -webkit-transform 2s ease;
+}
+#carousel .carousel-item .caption{
+  background:rgba(189,141,36,0.85);
+}
+
+#carousel .carousel-item .caption2{
+  background:rgba(0,0,0,0.5);
+}
+.oscurito{
+  background:rgba(0,0,0,0.5);
+}
+
+/*  owl */
+div::-webkit-scrollbar{
+display: none;
+}
+.hola .product{
+min-width: 24%;
+transition: 0.5s;
+}
+@media (max-width: 768px) {
+.hola .product {
+    min-width: 99%;
+}
+}
 
