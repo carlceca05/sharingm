@@ -6,12 +6,13 @@
   background-size: cover;
   background-position: center;
   transition: all .2s ease-out;
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url('../imagenes/s4-1.jpg');
+  background-image: url('../imagenes/s4-1.jpg');
   /*background-color: blue;*/
   -webkit-animation: fondoso 25s infinite linear;
   animation: fondoso 25s infinite linear;
   -moz-animation: fondoso 25s infinite linear;
 }
+/*
 @keyframes fondoso {
   0% {
     background-image: url('../imagenes/s4-1.jpg');
@@ -38,18 +39,19 @@
     background-image: url('../imagenes/s4-2.jpg');
   }
 }
-
+*/
 .fondazo2 {
   position: relative;
   background-size: cover;
   background-position: center;
   transition: all .2s ease-out;
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url('../imagenes/capa-1.jpg');
+  background-image:  url('../imagenes/capa-1.jpg');
   /*background-color: blue;*/
   -webkit-animation: fondoso2 25s infinite linear;
   animation: fondoso2 25s infinite linear;
   -moz-animation: fondoso2 25s infinite linear;
 }
+/*
 @keyframes fondoso2 {
   0% {
     background-image: url('../imagenes/capa-1.jpg');
@@ -76,19 +78,20 @@
     background-image: url('../imagenes/capa-2.jpg');
   }
 }
-
+*/
 
 .fondazo3 {
   position: relative;
   background-size: cover;
   background-position: center;
   transition: all .2s ease-out;
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url('../imagenes/nacional-1.jpg');
+  background-image:  url('../imagenes/nacional-1.jpg');
   /*background-color: blue;*/
   -webkit-animation: fondoso3 25s infinite linear;
   animation: fondoso3 25s infinite linear;
   -moz-animation: fondoso3 25s infinite linear;
 }
+/*
 @keyframes fondoso3 {
   0% {
     background-image: url('../imagenes/nacional-1.jpg');
@@ -114,19 +117,20 @@
   100% {
     background-image: url('../imagenes/nacional-2.jpg');
   }
-}
+}*/
 
 .fondazo4 {
   position: relative;
   background-size: cover;
   background-position: center;
   transition: all .2s ease-out;
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url('../imagenes/s4-1.jpg');
+  background-image:  url('../imagenes/s4-1.jpg');
   /*background-color: blue;*/
   -webkit-animation: fondoso4 25s infinite linear;
   animation: fondoso4 25s infinite linear;
   -moz-animation: fondoso4 25s infinite linear;
 }
+/*
 @keyframes fondoso4 {
   0% {
     background-image: url('../imagenes/s4-1.jpg');
@@ -153,18 +157,19 @@
     background-image: url('../imagenes/s4-2.jpg');
   }
 }
-
+*/
 .fondazo5 {
   position: relative;
   background-size: cover;
   background-position: center;
   transition: all .2s ease-out;
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url('../imagenes/autos-1.JPG');
+  background-image: url('../imagenes/autos-1.JPG');
   /*background-color: blue;*/
   -webkit-animation: fondoso5 25s infinite linear;
   animation: fondoso5 25s infinite linear;
   -moz-animation: fondoso5 25s infinite linear;
 }
+/*
 @keyframes fondoso5 {
   0% {
     background-image: url('../imagenes/autos-1.JPG');
@@ -191,7 +196,7 @@
     background-image: url('../imagenes/autos-2.JPG');
   }
 }
-
+*/
 .fondazo6 {
   position: relative;
   background-size: cover;
