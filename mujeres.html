@@ -23,10 +23,48 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
     <style>
-        
+        .roboto{
+            font-family: 'Roboto', sans-serif;
+        }
+        p{
+                font-weight: 300; 
+                line-height: 1.5em;
+                font-size: 18px;
+            }
+        @media only screen and (min-width:901px) and (max-width:3000px) {
+            .espacio{
+                padding-left: 6% ;
+                padding-right: 6%;
+            }
+            .pah1{
+                font-weight: 800; 
+                font-size: 50px;
+                line-height: 1.3em;
+                color: #333;
+            }
+            .pah2{
+                font-weight: 800; 
+                font-size: 26px;
+                line-height: 1.2em;
+                color: #333;
+            }
+        }
+        @media only screen and (min-width:100px) and (max-width:900px) {
+            .pah1{
+                font-weight: 800; 
+                font-size: 35px;
+                line-height: 1.3em;
+            }
+            .pah2{
+                font-weight: 800; 
+                font-size: 22px;
+                line-height: 1.2em;
+                color: #333;
+            }   
+        }
     </style>
 </head>
 
@@ -118,103 +156,527 @@
     </section>
     -->
     <!--seccion 2 introducion-->
-    <section class="container-fluid pt-5 pb-5 ">
-        <div class="container pt-5 pb-5 text-center mb-5 ">
-            <h2 class="fw-bold mb-5 text-center"> Queridas Mujeres Emprendedoras</h2>
-            <p class="fs-5">Espero que este mensaje les encuentre en un momento de reflexión y apertura </p>
-            <p class="mb-0 fs-5">En Sharing_MIND Queremos dirigirnos a todas aquellas mujeres que, como nuestras queridas Líderes Consultoras Natura   llevan múltiples roles en la vida y han experimentado desafíos en su camino.</p>
+    <section class="container-fluid py-5 " style="background-image:  linear-gradient(180deg,#E4F1F8 0%,#FFFFFF 55%), url();">
+        <div class="container pt-5 text-center mb-5 espacio">
+            <h2 class=" mb-5 text-center pah1"> Queridas Mujeres Emprendedoras</h2>
+            <p class="roboto fw-bold mb-4">Espero que este mensaje les encuentre en un momento de reflexión y apertura </p>
+            <h4 class="mb-0 pah2">En Sharing_MIND Queremos dirigirnos a todas aquellas mujeres que, como nuestras queridas Líderes Consultoras Natura   llevan múltiples roles en la vida y han experimentado desafíos en su camino.</h4>
         </div>
+    </section>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        .swiper {
+          width: 100%;
+          height: 100%;
+        }
+    
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+    
+        .swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      </style>
+    <section class="" style="background: #eee; position: relative;" >
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="imagenes/s-1.JPG" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imagenes/s-2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imagenes/s-3.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imagenes/s-4.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imagenes/s-5.jpg" alt="">
+                </div>
+                <!--
+                <div class="swiper-slide">
+                    <img src="imagenes/IMG_3788.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imagenes/IMG_3788.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imagenes/IMG_3788.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="imagenes/IMG_3788.png" alt="">
+                </div>
+                -->
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 0,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    400: {
+                    slidesPerView: 1,
+                    /*spaceBetween: 20,*/
+                    },
+                    768: {
+                    slidesPerView: 2,
+                    /*spaceBetween: 40,*/
+                    },
+                    1024: {
+                    slidesPerView: 3,
+                    /*spaceBetween: 50,*/
+                    },
+                },
+            });
+            var swiper2 = new Swiper(".mySwiper2", {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            loop: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    400: {
+                    slidesPerView: 1,
+                    /*spaceBetween: 20,*/
+                    },
+                    768: {
+                    slidesPerView: 2,
+                    /*spaceBetween: 40,*/
+                    },
+                    1024: {
+                    slidesPerView: 3,
+                    /*spaceBetween: 50,*/
+                    },
+                },
+            });
+        </script>
     </section>
     <!--seccion 4 que ofrecemos-->
     <section class="container pt-5 pb-5">
         <div class="row pt-5 pb-5">
             <div class="col-12 col-lg-6">
-                <p class="fs-5 " > Entendemos que, en ocasiones, las responsabilidades y las expectativas de llevar una familia a la vez que querer  encontrar esa realización como individuos Emprendedores y Profesionistas pueden pesar sobre nuestros hombros, afectando nuestro crecimiento personal y profesional.  </p>
-                <p class="fs-5 " > Sabemos que algunas de ustedes pueden enfrentar situaciones en las que la búsqueda de su propio desarrollo se ve eclipsada por dinámicas familiares o personales. </p>
+                <img src="imagenes/logonatura copia.png" width="80px" alt="">
+                <p class=" roboto" > Entendemos que, en ocasiones, las responsabilidades y las expectativas de llevar una familia a la vez que querer  encontrar esa realización como individuos Emprendedores y Profesionistas pueden pesar sobre nuestros hombros, afectando nuestro crecimiento personal y profesional.  </p>
+                <p class="roboto " > Sabemos que algunas de ustedes pueden enfrentar situaciones en las que la búsqueda de su propio desarrollo se ve eclipsada por dinámicas familiares o personales. </p>
+                <div class="mb-4">
+                    <!--slider testimonios-->
+                    <div id="carouselExample2" class="carousel slide rounded ">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <p class="roboto"> <em> "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, eius officia aut maiores." </em></p>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img class="" src="imagenes/testimonio-1.JPG" width="80px" alt="" style="border-radius: 10px;">
+                                    </div>
+                                    <div class="col-10 d-flex align-items-center">
+                                        <p class="fw-bold roboto mb-0 small"><em> Nombre, Edad, Momento de Carrera, Ganador de 4 Convenciones Nacionales </em> <br> Lider Natura </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <p class="roboto"> <em> "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, eius officia aut maiores." </em></p>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img src="imagenes/testimonio-2.JPG" width="80px" alt="" style="border-radius: 10px;">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="fw-bold roboto mb-0 small"><em> Nombre, Edad, Momento de Carrera, Ganador de 4 Convenciones Nacionales </em> <br> Lider Natura </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <p class="roboto"> <em> "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, eius officia aut maiores." </em></p>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img src="imagenes/testimonio-3.JPG" width="80px" alt="" style="border-radius: 10px;">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="fw-bold roboto mb-0 small"><em> Nombre, Edad, Momento de Carrera, Ganador de 4 Convenciones Nacionales </em> <br> Lider Natura </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <p class="roboto"> <em> "Disfruto mucho participar en el desarrollo de nuevos negocios y rodearme de gente emprendedora, en Natura he ampliado mi red de contactos y puedo hacer negocios con conocidos, amigos y familia…" </em></p>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img src="imagenes/testimonio-4.JPG" width="80px" alt="" style="border-radius: 10px;">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="fw-bold roboto mb-0 small"><em> Nombre, Edad, Momento de Carrera, Ganador de 4 Convenciones Nacionales </em> <br> Lider Natura </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <p class="roboto"> <em> "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, eius officia aut maiores." </em></p>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img src="imagenes/testimonio-5.JPG" width="80px" alt="" style="border-radius: 10px;">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="fw-bold roboto mb-0 small"><em> Nombre, Edad, Momento de Carrera, Ganador de 4 Convenciones Nacionales </em> <br> Lider Natura </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <p class="roboto"> <em> "Tras años de trabajar en la industria farmacéutica buscaba libertad y generar ingresos que me permitieran viajar y disfrutar de mi vida, en Natura he encontrado el negocio ideal para hacerlo posible…" </em></p>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img src="imagenes/testimonio-6.JPG" width="80px" alt="" style="border-radius: 10px;">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="fw-bold roboto mb-0 small"><em> Nombre, Edad, Momento de Carrera, Ganador de 4 Convenciones Nacionales </em> <br> Lider Natura </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <p class="roboto"> <em> "Después de años como docente decidí que era momento de emprender en un negocio que me permitiera contar con tiempo libre para disfrutar de mi familia y que me ayudara a generar más ingresos…" </em></p>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img src="imagenes/testimonio-7.JPG" width="80px" alt="" style="border-radius: 10px;">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="fw-bold roboto mb-0 small"><em> Nombre, Edad, Momento de Carrera, Ganador de 4 Convenciones Nacionales </em> <br> Lider Natura </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <p class="roboto"> <em> "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, eius officia aut maiores." </em></p>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img src="imagenes/testimonio-8.JPG" width="80px" alt="" style="border-radius: 10px;">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="fw-bold roboto mb-0 small"><em> Nombre, Edad, Momento de Carrera, Ganador de 4 Convenciones Nacionales </em> <br> Lider Natura </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <p class="roboto"> <em> "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, eius officia aut maiores." </em></p>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img src="imagenes/testimonio-9.JPG" width="80px" alt="" style="border-radius: 10px;">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="fw-bold roboto mb-0 small"><em> Nombre, Edad, Momento de Carrera, Ganador de 4 Convenciones Nacionales </em> <br> Lider Natura </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <p class="roboto"> <em> "Como mamá para mi era imprescindible contar con un ingreso seguro que me permitiera proveer para mi familia, desde que inicié mi negocio en Natura mis ganancias han aumentado y puedo estar con hija…" </em></p>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img src="imagenes/testimonio-10.JPG" width="80px" alt="" style="border-radius: 10px;">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="fw-bold roboto mb-0 small"><em> Nombre, Edad, Momento de Carrera, Ganador de 4 Convenciones Nacionales </em> <br> Lider Natura </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <p class="roboto"> <em> "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, eius officia aut maiores." </em></p>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img src="imagenes/testimonio-11.JPG" width="80px" alt="" style="border-radius: 10px;">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="fw-bold roboto mb-0 small"><em> Nombre, Edad, Momento de Carrera, Ganador de 4 Convenciones Nacionales </em> <br> Lider Natura </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <p class="roboto"> <em> "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, eius officia aut maiores." </em></p>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img src="imagenes/testimonio-12.JPG" width="80px" alt="" style="border-radius: 10px;">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="fw-bold roboto mb-0 small"><em> Nombre, Edad, Momento de Carrera, Ganador de 4 Convenciones Nacionales </em> <br> Lider Natura </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <p class="roboto"> <em> "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, eius officia aut maiores." </em></p>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img src="imagenes/testimonio-13.JPG" width="80px" alt="" style="border-radius: 10px;">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="fw-bold roboto mb-0 small"><em> Nombre, Edad, Momento de Carrera, Ganador de 4 Convenciones Nacionales </em> <br> Lider Natura </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <p class="roboto"> <em> "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, eius officia aut maiores." </em></p>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img src="imagenes/testimonio-14.JPG" width="80px" alt="" style="border-radius: 10px;">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="fw-bold roboto mb-0 small"><em> Nombre, Edad, Momento de Carrera, Ganador de 4 Convenciones Nacionales </em> <br> Lider Natura </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <p class="roboto"> <em> "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, eius officia aut maiores." </em></p>
+                                <div class="row">
+                                    <div class="col-2">
+                                        <img src="imagenes/testimonio-15.JPG" width="80px" alt="" style="border-radius: 10px;">
+                                    </div>
+                                    <div class="col-10">
+                                        <p class="fw-bold roboto mb-0 small"><em> Nombre, Edad, Momento de Carrera, Ganador de 4 Convenciones Nacionales </em> <br> Lider Natura </p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <!--
+                    <div class="col-2">
+                        <img src="imagenes/testimonio-alumna.jpg" width="80px" alt="" style="border-radius: 10px;">
+                    </div>
+                    <div class="col-10">
+                        <p class="fw-bold roboto"><em> Nombre, Edad, Momento de Carrera, Ganador de 4 Convenciones Nacionales </em> <br> Lider Natura </p>
+                    </div>
+                    -->
+                </div>
             </div>
             <div class="col-12 col-lg-6">
-                <!--
-                <img class="img-fluid " src="imagenes/z100_sp_devices_curriculum.webp" alt="" style="transform: scale(1.5);">-->
+                <div id="carouselExample" class="carousel slide rounded ">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagenes/s1-1.JPG" class="d-block w-100" alt="..." style="border-radius: 10px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagenes/s1-2.JPG" class="d-block w-100" alt="..." style="border-radius: 10px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagenes/s1-3.JPG" class="d-block w-100" alt="..." style="border-radius: 10px;">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagenes/s1-4.JPG" class="d-block w-100" alt="..." style="border-radius: 10px;">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img class="img-fluid" src="imagenes/s1-2.JPG"  alt="" style="border-radius: 15px;">
+                </div>
+                <div class="col">
+                    <img class="img-fluid" src="imagenes/s1-3.JPG"  alt="" style="border-radius: 15px;">
+                </div>
+                <div class="col">
+                    <img class="img-fluid" src="imagenes/s1-4.JPG"  alt="" style="border-radius: 15px;">
+                </div>
             </div>
         </div>
     </section>
+    <style>
+        .card-sh{
+            height: 23rem; 
+            width: 15rem; 
+            transition: all 0.5s linear; 
+            border:none; 
+            border-radius:8px;
+        }
+        .card-body-sh{
+            bottom:0; 
+            background-image:linear-gradient(-180deg, rgba(0,0,0,0.0) 0%, rgba(0,0,0,0.7) 20%), url();
+            border-bottom-left-radius:8px;
+            border-bottom-right-radius:8px;
+        }
+    </style>
 
     <!--seccion 3 porque nosotros-->
     <section class="container-fluid  pt-5 pb-5 ">
         <div class="container   pt-5 pb-5 mt-5 mb-5">
-            <h2 class="fw-bold text-center mb-5">Queremos recordarles que su potencial es infinito y que merecen vivir una vida plena, llena de logros y satisfacciones. A veces, el primer paso hacia una transformación positiva es reconocer la importancia de invertir tiempo y energía en ustedes mismas.</h2>
+            <h2 class="pah2 text-center mb-5">Queremos recordarles que su potencial es infinito y que merecen vivir una vida plena, llena de logros y satisfacciones. A veces, el primer paso hacia una transformación positiva es reconocer la importancia de invertir tiempo y energía en ustedes mismas.</h2>
         </div>
     </section>
 
-    <section class="container pt-5 pb-5">
+    <section class="container py-5">
         <div class="row pt-5 pb-5">
             <div class="col-12 col-lg-6">
                 
             </div>
             <div class="col-12 col-lg-6">
-                <p class="fs-5 " > En Natura, no solo somos líderes en productos de cuidado personal y del Bien Estar Bien , Tenemos una Oportunidad inigualable  para ti  ,nos encantaría que formes parte de nuestras mujeres empoderadas que han decidido tomar las riendas de sus vidas. Nos alegraría darles la bienvenida a este espacio de crecimiento y autoafirmación.  </p>
-                <p class="fs-5 " > Creemos firmemente en la idea de que, al fortalecernos individualmente, también fortalecemos a nuestras familias y comunidades. Queremos ser parte de su viaje de autodescubrimiento y apoyarlas para que alcancen sus metas y sueños. </p>
-                <p class="fs-5 " > Si sienten que es el momento de dar un paso hacia un cambio positivo, de explorar nuevas oportunidades y de formar parte de una comunidad que valora su crecimiento personal y profesional, les extendemos una invitación abierta para unirse a Natura. </p>
+                <p class="roboto " > En Natura, no solo somos líderes en productos de cuidado personal y del Bien Estar Bien , Tenemos una Oportunidad inigualable  para ti  ,nos encantaría que formes parte de nuestras mujeres empoderadas que han decidido tomar las riendas de sus vidas. Nos alegraría darles la bienvenida a este espacio de crecimiento y autoafirmación.  </p>
+                <p class="roboto " > Creemos firmemente en la idea de que, al fortalecernos individualmente, también fortalecemos a nuestras familias y comunidades. Queremos ser parte de su viaje de autodescubrimiento y apoyarlas para que alcancen sus metas y sueños. </p>
+                <p class="roboto " > Si sienten que es el momento de dar un paso hacia un cambio positivo, de explorar nuevas oportunidades y de formar parte de una comunidad que valora su crecimiento personal y profesional, les extendemos una invitación abierta para unirse a Natura. </p>
             </div>
         </div>
     </section>
     <!--seccion 3 porque nosotros-->
-    <section class="container-fluid  pt-5 pb-5 ">
-        <div class="container   pt-5 pb-5 mt-5 mb-5">
-            <p class="text-center fs-5"> En Natura, no solo encontrarán productos excepcionales, sino también un espacio donde cada una es alentada a brillar con luz propia. Junto a nuestro equipo de mujeres Líderes  podrán construir un futuro en el que cada una se sienta capacitada para alcanzar sus metas. </p>
-            <p class="text-center fs-5 mb-5">Si desean más información o simplemente quieren compartir sus pensamientos, estamos aquí para escucharlas. ¡Anímense a dar ese primer paso hacia un cambio positivo! </p>
-            <p class="text-center fs-5">Con cariño,<br><strong>Sharing_MIND</strong><br><strong> <em> Consciencia Colectiva</em> </p>
+    <section class="container-fluid  py-5 ">
+        <div class="container   py-5 mt-5 mb-5">
+            <p class="text-center roboto"> En Natura, no solo encontrarán productos excepcionales, sino también un espacio donde cada una es alentada a brillar con luz propia. Junto a nuestro equipo de mujeres Líderes  podrán construir un futuro en el que cada una se sienta capacitada para alcanzar sus metas. </p>
+            <p class="text-center roboto mb-5">Si desean más información o simplemente quieren compartir sus pensamientos, estamos aquí para escucharlas. ¡Anímense a dar ese primer paso hacia un cambio positivo! </p>
+            <p class="text-center roboto">Con cariño,<br><strong>Sharing_MIND</strong><br><strong> <em> Consciencia Colectiva</em> </p>
         </div>
     </section>
-    <!--seccion 3 porque nosotros-->
     <section class="container-fluid  pt-5 pb-5 ">
-        <div class="container   pt-5 pb-5 mt-5 mb-5">
-            <p class="text-center fs-5">Entérate de los logros que hemos conseguido en Natura, mismos que queremos extender para Ti, entre ellos:</p>
+        <div class="container   pt-5 pb-5 mt-5 mb-5 espacio">
+            <h2 class="pah2 text-center mb-5">Queremos ser tu guía, tu fuente de inspiración y tu plataforma para el crecimiento personal y profesional en el mundo de la belleza consciente.</h2>
+            <p class="text-center roboto mb-4" style="font-size: 22px;">Entérate de los logros que hemos conseguido en Natura, mismos que queremos extender para Ti, entre ellos:</p>
+            <div>
+                <header class=" text-end pe-4 ">
+                    <p>
+                        <span class="mueve btn btn-lg cursor-pointer btn-outline-primary fw-bold" >&#139;</span>
+                        <span class="mueve btn btn-lg cursor-pointer btn-outline-primary fw-bold ">&#155;</span>
+                    </p>
+                </header>
+                <div class="m-auto d-flex hola pt-2 pb-5 ps-0 ps-lg-3 pe-0 pe-lg-2" style="overflow-x: auto; scrollbar-width:none; " >
+                    <div class="product  position-relative ">
+                        <div class="card card-sh shadow fondazo position-relative" >
+                            <div class="card-body card-body-sh position-absolute" >
+                                <h5 class="card-title text-center text-white fw-bold" style="bottom:0 ;"> Genera Ingresos Residuales  </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product position-relative">
+                        <div class="card shadow fondazo2 position-relative card-sh">
+                            <div class="card-body position-absolute card-body-sh"  >
+                                <h5 class="card-title text-center text-white fw-bold" style="bottom:0 ;">Recibe Capacitación  </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product  position-relative ">
+                        <div class="card shadow fondazo3 position-relative card-sh" >
+                            <div class="card-body position-absolute w-100 card-body-sh"  >
+                                <h5 class="card-title text-center text-white fw-bold" style="bottom:0 ;">Gana Viajes Nacionales </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="  position-relative product ">
+                        <div class="card shadow fondazo4  position-relative card-sh" >
+                            <div class="card-body position-absolute card-body-sh"  >
+                                <h5 class="card-title text-center text-white fw-bold" style="bottom:0 ;">Gana Viajes Internacionales </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product  position-relative ">
+                        <div class="card shadow fondazo5  position-relative card-sh" >
+                            <div class="card-body position-absolute w-100 card-body-sh"  >
+                                <h5 class="card-title text-center text-white fw-bold" style="bottom:0 ;"> Gana Autos </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product  position-relative ">
+                        <div class="card shadow fondazo6  position-relative card-sh" >
+                            <div class="card-body position-absolute w-100 card-body-sh"  >
+                                <h5 class="card-title text-center text-white fw-bold" style="bottom:0 ;"> 8 Formas de Ganar </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product  position-relative ">
+                        <div class="card shadow fondazo7 position-relative card-sh" >
+                            <div class="card-body position-absolute w-100 card-body-sh"  >
+                                <h5 class="card-title text-center text-white fw-bold" style="bottom:0 ;"> Premios </h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product  position-relative ">
+                        <div class="card shadow fondazo5  position-relative card-sh" >
+                            <div class="card-body position-absolute w-100 card-body-sh"  >
+                                <h5 class="card-title text-center text-white fw-bold" style="bottom:0 ;"> Acompañamiento </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <!--
             <div class="" style="width: 600px; margin-left: auto;margin-right: auto;" >  
                 <ul class="fs-5 list-unstyled fw-bold">
-                    <li><i class="bi bi-check-lg text-primary fs-4"></i>  Ganancias residuales que se incrementan ciclo a ciclo</li>
-                    <li><i class="bi bi-check-lg text-primary fs-4"></i> Capacitación y Desarrollo Constante</li>
-                    <li><i class="bi bi-check-lg text-primary fs-4"></i> Viajes Nacionales</li>
-                    <li><i class="bi bi-check-lg text-primary fs-4"></i> Viajes Internacionales</li>
-                    <li><i class="bi bi-check-lg text-primary fs-4"></i> Campañas de Auto </li>
-                    <li><i class="bi bi-check-lg text-primary fs-4"></i> 8 Formas de Ganar </li>
-                    <li><i class="bi bi-check-lg text-primary fs-4"></i> Premios, joyas, crecimiento personal , ganancias  exponenciales </li>
-                    <li><i class="bi bi-check-lg text-primary fs-4"></i> Acompañamiento personalizado de Sharing_MIND durante esta emocionante carrera </li>
+                    <li class="roboto"><i class="bi bi-check-lg text-primary fs-4"></i>  Ganancias residuales que se incrementan ciclo a ciclo</li>
+                    <li class="roboto"><i class="bi bi-check-lg text-primary fs-4"></i> Capacitación y Desarrollo Constante</li>
+                    <li class="roboto"><i class="bi bi-check-lg text-primary fs-4"></i> Viajes Nacionales</li>
+                    <li class="roboto"><i class="bi bi-check-lg text-primary fs-4"></i> Viajes Internacionales</li>
+                    <li class="roboto"><i class="bi bi-check-lg text-primary fs-4"></i> Campañas de Auto </li>
+                    <li class="roboto"><i class="bi bi-check-lg text-primary fs-4"></i> 8 Formas de Ganar </li>
+                    <li class="roboto"><i class="bi bi-check-lg text-primary fs-4"></i> Premios, joyas, crecimiento personal , ganancias  exponenciales </li>
+                    <li class="roboto"><i class="bi bi-check-lg text-primary fs-4"></i> Acompañamiento personalizado de Sharing_MIND durante esta emocionante carrera </li>
                 </ul>
             </div>
+            -->
         </div>
     </section>
 
     <!--seccion 5 que ofrecemos 2.0 -->
     <section class="container-fluid pt-5 ">
-        <div class="container pt-5 pb-5 ">    
-            <h2 class="fw-bold mb-5 text-center">¿Qué puedes esperar de nosotros?</h2>
-            <div class="" style="max-width: 700px; margin-left: auto;margin-right: auto;">
-                <div class="row">
-                    <div class="col-1">
-                        <img src="imagenes/hex-target-teal.svg" alt="">
+        <div class="container pt-5 pb-5 espacio">    
+            <h2 class="fw-bold mb-5 text-center pah1">¿Qué puedes esperar de nosotros?</h2>
+            <div class="" style="max-width: 900px; margin-left: auto;margin-right: auto;">
+                <div class="row  py-4 rounded shadow mb-4" style="background-image: url(imagenes/1111.PNG);background-position:; background-repeat: no-repeat;background-size: cover;">
+                    <div class="col-3">
+
                     </div>
-                    <div class="col-11">
-                        <h4 class="fw-bold mb-0">Cursos Exclusivos: </h4>
-                        <p class="fs-5"> Ofreceremos programas diseñados específicamente para líderes Natura, cubriendo temas esenciales para destacar en este apasionante sector</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-1">
-                        <img src="imagenes/hex-target-teal.svg" alt="">
-                    </div>
-                    <div class="col-11">
-                        <h4 class="fw-bold mb-0">Comunidad Activa: </h4>
-                        <p class="fs-5"> Fomentaremos la colaboración y el intercambio de experiencias entre líderes Natura. La red de apoyo que formaremos será invaluable.</p>
+                    <div class="col-9">
+                        <h4 class="fw-bold mb-0">Cursos Exclusivos </h4>
+                        <p class="roboto"> Ofreceremos programas diseñados específicamente para líderes Natura, cubriendo temas esenciales para destacar en este apasionante sector</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-1">
-                        <img src="imagenes/hex-target-teal.svg" alt="">
+                <div class="row py-4 rounded shadow mb-4" style="background-image: url(imagenes/1111.PNG);background-position:; background-repeat: no-repeat;background-size: cover;">
+                    <div class="col-3">
+                    
                     </div>
-                    <div class="col-11">
-                        <h4 class="fw-bold mb-0">Recursos Especializados: </h4>
-                        <p class="fs-5"> Proporcionaremos recursos actualizados sobre tendencias en la industria, estrategias de marketing efectivas y herramientas para impulsar tu éxito.</p>
+                    <div class="col-9">
+                        <h4 class="fw-bold mb-0">Comunidad Activa </h4>
+                        <p class="roboto"> Fomentaremos la colaboración y el intercambio de experiencias entre líderes Natura. La red de apoyo que formaremos será invaluable.</p>
+                    </div>
+                </div>
+                <div class="row  py-4 rounded shadow mb-4" style="background-image: url(imagenes/1111.PNG);background-position:; background-repeat: no-repeat;background-size: cover;">
+                    <div class="col-3">
+                        
+                    </div>
+                    <div class="col-9">
+                        <h4 class="fw-bold mb-0">Recursos Especializados </h4>
+                        <p class="roboto"> Proporcionaremos recursos actualizados sobre tendencias en la industria, estrategias de marketing efectivas y herramientas para impulsar tu éxito.</p>
                     </div>
                 </div>
             </div>
@@ -222,48 +684,76 @@
     </section>
     
     <!--seccion 3 porque nosotros-->
-    <section class="container-fluid  pt-5 pb-5 ">
-        <div class="container   pt-5 pb-5 mt-5 mb-5">
+    <section class="container-fluid  py-5 ">
+        <div class="container   py-5 mt-5 mb-5">
             <!--<h2 class="fw-bold text-center mb-5">Queremos ser tu guía, tu fuente de inspiración y tu plataforma para el crecimiento personal y profesional en el mundo de la belleza consciente.</h2>-->
-            <p class="text-center fs-5">Este relanzamiento no sólo marca el retorno de Sharing_MIND sino también el comienzo de una nueva y emocionante fase para todos nosotros. Estamos ansiosos por reconectar contigo y ser parte de tu viaje hacia el liderazgo en el mundo Natura.</p>
-            <p class="text-center fs-5">¡Gracias por ser parte de la familia Sharig_MIND  Estamos listos para alcanzar nuevas alturas juntos. 💚✨</p>
+            <p class="text-center roboto">Este relanzamiento no sólo marca el retorno de Sharing_MIND sino también el comienzo de una nueva y emocionante fase para todos nosotros. Estamos ansiosos por reconectar contigo y ser parte de tu viaje hacia el liderazgo en el mundo Natura.</p>
+            <p class="text-center roboto">¡Gracias por ser parte de la familia Sharig_MIND  Estamos listos para alcanzar nuevas alturas juntos. 💚✨</p>
             
         </div>
     </section>
 
+    <section class=" py-5 mb-5 espacio "  style="background-image: linear-gradient(90deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%), url(imagenes/fondonova.jpg); background-repeat: no-repeat;background-size: cover;">
+        <div class="p-4 ">
+            <h2 class="fw-bold text-center text-white mb-4">Asiste al siguiente curso</h2>
+            <p class="text-white text-center mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, labore minus maxime praesentium rerum esse aliquam fugiat pariatur iure, quis magnam perspiciatis provident ut a illo dignissimos commodi officiis aliquid.</p>
+            <p class="text-center"> <a class="btn btn-light shadow fw-bold text-primary" href="" style="border-radius: 40px;">Más Información </a> </p>
+        </div>
+    </section>
+
     <!--seccion 9 testimonios-->
-    <section class="container pt-5 pb-5 mb-5">
-        <h2 class="fw-bold text-center mb-5">Testimonios</h2>
-        <div class="items">
-            <!--#1-->
-            <div class="card me-2 ">
-                <div class="row p-1">
-                    <div class="col-4">
-                        <img src="imagenes/testimonio-alumna.jpg" class="img-fluid pt-2 ps-2" alt="...">
-                    </div>
-                    <div class="col-8">
-                        <div class="card-body border-primary border-3 border-start">
-                            <h5 class="card-title">"SharingMIND me ayudo a emprender, gracias.."</h5>
-                            <p class="card-text mb-0"><small>Armando Perez olivas</small> </p>
-                            <p class="card-text mt-0"><small> Emprendedor conciente </small> </p>
+    <section class="container-fluid" style="background-image:  linear-gradient(0deg,#E4F1F8 0%,#FFFFFF 55%), url();"  >
+        <div class="container pt-5 pb-5 mb-5">
+            <h2 class="pah1 text-center mb-5">Testimonios</h2>
+            <div class="items">
+                <!--#1-->
+                <div class="card me-2 ">
+                    <div class="row p-1">
+                        <div class="col-4">
+                            <img src="imagenes/testimonio-alumna.jpg" class="img-fluid pt-2 ps-2" alt="...">
                         </div>
-                        <div class="testi">
-                            <img class="" src="imagenes/ico-quote-mark.webp" alt="">
+                        <div class="col-8">
+                            <div class="card-body border-primary border-3 border-start">
+                                <h5 class="card-title">"SharingMIND me ayudo a emprender, gracias.."</h5>
+                                <p class="card-text mb-0"><small>Armando Perez olivas</small> </p>
+                                <p class="card-text mt-0"><small> Emprendedor conciente </small> </p>
+                            </div>
+                            <div class="testi">
+                                <img class="" src="imagenes/ico-quote-mark.webp" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!--#2-->
-            <div class="card me-2 ">
-                <div class="row p-1">
-                    <div class="col-4">
-                        <img src="imagenes/testimonio-alumna.jpg" class="img-fluid pt-2 ps-2" alt="...">
+                <!--#2-->
+                <div class="card me-2 ">
+                    <div class="row p-1">
+                        <div class="col-4">
+                            <img src="imagenes/testimonio-alumna.jpg" class="img-fluid pt-2 ps-2" alt="...">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body border-primary border-3 border-start">
+                                <h5 class="card-title">"SharingMIND me ayudo a emprender, gracias.."</h5>
+                                <p class="card-text mb-0"><small>Armando Perez olivas</small> </p>
+                                <p class="card-text mt-0"><small> Creador de contenido y emprendedor </small> </p>
+                                <div class="testi">
+                                    <img class="" src="imagenes/ico-quote-mark.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-8">
-                        <div class="card-body border-primary border-3 border-start">
-                            <h5 class="card-title">"SharingMIND me ayudo a emprender, gracias.."</h5>
-                            <p class="card-text mb-0"><small>Armando Perez olivas</small> </p>
-                            <p class="card-text mt-0"><small> Creador de contenido y emprendedor </small> </p>
+                </div>
+                <!--#3-->
+                <div class="card me-2">
+                    <div class="row p-1">
+                        <div class="col-4">
+                            <img src="imagenes/testimonio-alumna.jpg" class="img-fluid pt-2 ps-2" alt="...">
+                        </div>
+                        <div class="col-8">
+                            <div class="card-body border-primary border-3 border-start">
+                                <h5 class="card-title">"SharingMIND me ayudo a emprender, gracias.."</h5>
+                                <p class="card-text mb-0"><small>Armando Perez olivas</small> </p>
+                                <p class="card-text mt-0"><small> Creador de contenido y emprendedor</small></p>
+                            </div>
                             <div class="testi">
                                 <img class="" src="imagenes/ico-quote-mark.webp" alt="">
                             </div>
@@ -271,26 +761,7 @@
                     </div>
                 </div>
             </div>
-            <!--#3-->
-            <div class="card me-2">
-                <div class="row p-1">
-                    <div class="col-4">
-                        <img src="imagenes/testimonio-alumna.jpg" class="img-fluid pt-2 ps-2" alt="...">
-                    </div>
-                    <div class="col-8">
-                        <div class="card-body border-primary border-3 border-start">
-                            <h5 class="card-title">"SharingMIND me ayudo a emprender, gracias.."</h5>
-                            <p class="card-text mb-0"><small>Armando Perez olivas</small> </p>
-                            <p class="card-text mt-0"><small> Creador de contenido y emprendedor</small></p>
-                        </div>
-                        <div class="testi">
-                            <img class="" src="imagenes/ico-quote-mark.webp" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--#4-->
-        </div>
+        </div> 
     </section>
 
     <!-- carrusel no se porque no sirve estando mas abajo  -->

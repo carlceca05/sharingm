@@ -202,12 +202,13 @@
   background-size: cover;
   background-position: center;
   transition: all .2s ease-out;
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url('../imagenes/formas-1.JPG');
+  background-image:  url('../imagenes/formas-1.JPG');
   /*background-color: blue;*/
   -webkit-animation: fondoso6 25s infinite linear;
   animation: fondoso6 25s infinite linear;
   -moz-animation: fondoso6 25s infinite linear;
 }
+/*
 @keyframes fondoso6 {
   0% {
     background-image: url('../imagenes/formas-1.JPG');
@@ -234,7 +235,7 @@
     background-image: url('../imagenes/formas-2.JPG');
   }
 }
-
+*/
 
 
 
@@ -248,12 +249,13 @@
   background-size: cover;
   background-position: center;
   transition: all .2s ease-out;
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url('../imagenes/joyas-1.JPG');
+  background-image:  url('../imagenes/joyas-1.JPG');
   /*background-color: blue;*/
   -webkit-animation: fondoso7 25s infinite linear;
   animation: fondoso7 25s infinite linear;
   -moz-animation: fondoso7 25s infinite linear;
 }
+/*
 @keyframes fondoso7 {
   0% {
     background-image: url('../imagenes/joyas-1.JPG');
@@ -279,7 +281,7 @@
   100% {
     background-image: url('../imagenes/joyas-2.JPG');
   }
-}
+}*/
 
 
 
@@ -444,7 +446,7 @@ transition: 0.5s;
 }
 @media (max-width: 768px) {
 .hola .product {
-    min-width: 99%;
+    min-width: 70%;
 }
 }
 
