@@ -290,14 +290,23 @@
 
 
 
-
-
-
-
-@media only screen and (min-width:100px) and (max-width:900px){
-
+.cursos {
+  background-image: url(../imagenes/1111.PNG);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
+@media only screen and (min-width:100px) and (max-width:900px){
+  .cursos {
+    background-image:none;
+  }
+}
+@media only screen and (min-width:901px) and (max-width:3000px){
+  .cuadrada{
+    display: none;
+  }
+}
 
 
 .fondo{
@@ -449,4 +458,5 @@ transition: 0.5s;
     min-width: 70%;
 }
 }
+
 
