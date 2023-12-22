@@ -450,13 +450,23 @@ div::-webkit-scrollbar{
 display: none;
 }
 .hola .product{
-min-width: 24%;
-transition: 0.5s;
+  /*min-width: 24%;*/
+  transition: 0.5s;
+  }
+@media only screen and (min-width:1200px) and (max-width:3000px){
+  .hola .product {
+    min-width: 21%;
+  }
 }
-@media (max-width: 768px) {
-.hola .product {
+@media only screen and (min-width:601px) and (max-width:1199px){
+  .hola .product {
+    min-width: 29%;
+  }
+}
+@media (max-width: 600px) {
+  .hola .product {
     min-width: 70%;
-}
+  }
 }
 
 
